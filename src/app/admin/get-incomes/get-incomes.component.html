@@ -1,0 +1,48 @@
+<h3>Income Table</h3>
+<form class="div2 animated bounceInRight">
+  <mat-form-field>
+    <input matInput (keyup)="incomeFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+
+  <table mat-table [dataSource]="incomeSource" class="mat-elevation-z8">
+
+    <!-- Company name column -->
+    <ng-container matColumnDef="companyName">
+      <th mat-header-cell *matHeaderCellDef>Company Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.companyName}} </td>
+    </ng-container>
+
+    <!-- Customer name column -->
+    <ng-container matColumnDef="customerName">
+      <th mat-header-cell *matHeaderCellDef>Customer Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.customerName}} </td>
+    </ng-container>
+
+    <!-- Date column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+
+    <!-- ExperationDate column -->
+    <ng-container matColumnDef="expDate">
+      <th mat-header-cell *matHeaderCellDef>ExperationDate</th>
+      <td mat-cell *matCellDef="let element"> {{element.expDate}} </td>
+    </ng-container>
+
+    <!-- Description column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef>Description</th>
+      <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+    </ng-container>
+
+      <!-- Price column -->
+      <ng-container matColumnDef="price">
+       <th mat-header-cell *matHeaderCellDef>Price</th>
+       <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+      </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="incomeColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: incomeColumns;"></tr>
+  </table>
+</form>

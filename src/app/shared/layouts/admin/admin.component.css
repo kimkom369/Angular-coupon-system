@@ -1,0 +1,171 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.mat-menu-item {
+  color: #28254C;
+  text-align: center;
+}
+/*Sign Out*/
+.sure {
+  font-family: notable;
+  font-size: small;
+  text-align: center;
+  color: #28254C;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+/* Main Page*/
+.container {
+  background-color: #8C8AA7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-sidenav {
+  
+  width: 250px;;
+}
+
+.no-shadow {
+  background-color: #332F63;
+  box-shadow: none !important;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 !important;
+  padding-left: 10px !important;
+}
+/*Tool-Bar*/
+.header-box-shadow {
+  background-color: #332F63;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+/*Nav-Bar*/
+.bottom-to-top {
+  background-color: #332F63;
+  border: 0 solid;
+  border-right-width: 1px;
+  border-image:
+  linear-gradient(to top, #c1c1c1, rgba(0, 0, 0, 0)) 1 100%
+}
+
+.mat-form-field {
+  
+  font-size: 14px;
+  width: 100%;
+}
+/*Nav-Bar -- add+show buttons*/
+.button1 {
+  color: ghostwhite;
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  width: 230px;
+}
+/*Nav-Bar --add button (create) */
+.button2 {
+  color: ghostwhite;
+  width: 100%;
+}
+/*Nav-Bar --update+remove(show button)*/
+.button3 {
+  color: #43076b;
+  width: 1000px;
+}
+/*Nav-Bar --Income button*/
+.button4 {
+  color: ghostwhite;
+  font-family: notable;
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  width: 230px;
+  margin-left: 9px;
+}
+/*Page Header fade-in header*/
+h1 {
+  text-align: center;
+  font-family: notable;
+  font-size: 100px;
+  color: #410572;
+  text-shadow: 1px 3px 0 #5c00a7, 1px 13px 5px #c752d6;
+}
+/*DATE fade-in header*/
+h2 {
+  text-align: center;
+  font-family: notable;
+  font-size: 65px;
+  color: #410572;
+  text-shadow: 1px 3px 0 #5c00a7, 1px 10px 5px #c752d6;
+}
+/*Header -- Company,Coupon,Customer,Income Tables*/
+h3 {
+  text-align: center;
+  font-family: notable;
+  font-size: 40px;
+  color: #FF5E65;
+  text-shadow: 1px 3px 0 #5c00a7, 1px 10px 5px #c752d6;
+}
+/*Table --header*/
+th {
+  background-color: #45047a;
+  font-size: 15px;
+  font-weight: bold;
+    color: ghostwhite;
+}
+
+
+table {
+  width: 100%;
+}
+
+
+tr.example-detail-row {
+  height: 0;
+}
+/*Table Hover -color*/
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: #2f5fb9;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #610479;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid rgb(17, 179, 17);
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
